@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Monastery-themed design system with serene colors inspired by Himalayan landscapes */
+
+@layer base {
+  :root {
+    /* Base colors - warm off-white background inspired by monastery walls */
+    --background: 45 20% 98%;
+    --foreground: 25 15% 15%;
+
+    /* Card colors - clean white with subtle warmth */
+    --card: 0 0% 100%;
+    --card-foreground: 25 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 15% 15%;
+
+    /* Primary - Deep saffron orange inspired by monk robes */
+    --primary: 25 85% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 25 85% 40%;
+
+    /* Secondary - Soft mountain mist gray */
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 25 15% 15%;
+
+    /* Muted - Gentle stone gray */
+    --muted: 220 15% 92%;
+    --muted-foreground: 25 10% 45%;
+
+    /* Accent - Himalayan sky blue */
+    --accent: 210 70% 85%;
+    --accent-foreground: 25 15% 15%;
+
+    /* Prayer flag colors */
+    --prayer-blue: 210 85% 55%;
+    --prayer-yellow: 45 95% 60%;
+    --prayer-red: 0 75% 55%;
+    --prayer-green: 120 45% 45%;
+    --prayer-white: 0 0% 98%;
+
+    /* Gradients */
+    --gradient-monastery: linear-gradient(135deg, hsl(var(--primary)), hsl(25 65% 35%));
+    --gradient-mountain: linear-gradient(180deg, hsl(210 30% 98%), hsl(210 20% 92%));
+    --gradient-prayer: linear-gradient(90deg, hsl(var(--prayer-blue)), hsl(var(--prayer-yellow)), hsl(var(--prayer-red)), hsl(var(--prayer-green)));
+
+    /* Shadows with warm tones */
+    --shadow-soft: 0 2px 8px hsl(25 15% 15% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(25 15% 15% / 0.12);
+    --shadow-large: 0 8px 32px hsl(25 15% 15% / 0.16);
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 25 85% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
